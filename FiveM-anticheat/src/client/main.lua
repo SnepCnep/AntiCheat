@@ -3,7 +3,7 @@
 AC = {}
 AC.Player = {}
 AC.System = {}
-
+AC.Player.perms = {}
 -- [//[ Threads ]\\] --
 
 CreateThread(function()
@@ -27,6 +27,7 @@ RegisterNetEvent("ac:cl:playerJoined", function(reqPerms)
 
     AC.Player.perms = reqPerms or {}
     AC.Player.isLoaded = true
+    print("^2[AntiCheat]^7 - Player has been loaded!")
 end)
 
 -- [//[ Functions ]\\] --

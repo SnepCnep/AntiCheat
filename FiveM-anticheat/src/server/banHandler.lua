@@ -67,8 +67,28 @@ function AC.Players:checkVPN(source)
 end
 
 -- [//[ Join Check (Ban/VPN) ]\\] --
+function BlockUserBanned(deferrals)
+
+end
+
+function BlockUserVPN(deferrals)
+
+
+end
+
+
 
 RegisterNetEvent("playerConnecting", function(playerName, setKickReason, deferrals)
+    local isPlayerBanned = false
     -- Soon!
+    -- deferrals.defer()
+
+    -- if Config.AntiVPN then
+    --     local hasVPN = AC.Players:checkVPN(source)
+    --     if hasVPN then
+    --         BlockUserVPN(deferrals)
+    --         return
+    --     end
+    -- end
 
 end)

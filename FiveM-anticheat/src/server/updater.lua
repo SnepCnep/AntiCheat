@@ -1,6 +1,6 @@
 -- [//[ Update Checker ]\\] --
 local getCurrentVersion = GetResourceMetadata(GetCurrentResourceName(), 'version', 0) or "1.0.0"
-local githubUrl = "https://raw.githubusercontent.com/SnepCnep/AntiCheat/main/anticheat/src/data/version.json"
+local githubUrl = "https://raw.githubusercontent.com/SnepCnep/FiveM-anticheat/main/FiveM-anticheat/src/data/version.json"
 
 CreateThread(function()
     
@@ -19,7 +19,7 @@ CreateThread(function()
             print("\27[1;32m-> Version : \27[1;37m " .. getCurrentVersion)
             print("\27[1;32m-> Status  : \27[1;37m ".. (req.status or "Unknown"))
             print("\27[1;33m--------------------------------------------------------------------------")
-            if GetCurrentResourceName() == "anticheat" then
+            if GetCurrentResourceName() == "anticheat" or GetCurrentResourceName() == "FiveM-AntiCheat" then
                 print("\27[1;31m-> Please change the resource name instead of using the default name!^7")
             end
         else
