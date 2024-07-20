@@ -14,7 +14,6 @@
 - Anti Prop Spawn [Beta]
 
 ## Know Issues
-- Anti Godmode ( Ban on join - Need to fix! )
 - Only `lua` scripts are supported for now.
 
 ## Coming Soon
