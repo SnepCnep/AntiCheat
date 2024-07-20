@@ -3,7 +3,7 @@
 - Safe Server Events [Beta]
 - Anti Weapon Spawn [Beta] (Only ox_inventory supported)
 - Anti Spectate
-- Anti Godmode [Beta] ( Ban on join - Need to fix! )
+- Anti Godmode [Beta]
 - Anti Freecam [Beta]
 - Anti Thermal/Nigth Vision
 - Anti Stop/Start Resource [Beta]
@@ -12,6 +12,11 @@
 - Anti Vehicle Spawn [Beta]
 - Anti Ped Spawn [Beta]
 - Anti Prop Spawn [Beta]
+
+## Know Issues
+- Anti Godmode ( Ban on join - Need to fix! )
+- Only `lua` scripts are supported for now.
+
 
 ## Coming Soon
 - Ban System :| ( In Development )
