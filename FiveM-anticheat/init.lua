@@ -114,3 +114,15 @@ if not isServerSide and GetResourceState("ox_inventory") ~= 'missing' then
         return _RemoveAllPedWeapons(ped)
     end
 end
+
+-- [//[ Anti Teleports ]\\] --
+if not isServerSide then
+    local _SetEntityCoords = SetEntityCoords
+    function SetEntityCoords(entity, x, y, z, xAxis, yAxis, zAxis, clearArea)
+        if GetResourceState("anticheat") == "started" then
+            exports["anticheat"]:SetEntityCoords(entity)
+        end
+
+        return _SetEntityCoords(entity, x, y, z, xAxis, yAxis, zAxis, clearArea)
+    end
+end
